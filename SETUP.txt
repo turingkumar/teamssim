@@ -1,0 +1,94 @@
+TEAMS SIMULATOR - QUICK SETUP GUIDE
+====================================
+
+STEP 1: Create Project Directory
+---------------------------------
+mkdir teams-simulator
+cd teams-simulator
+
+
+STEP 2: Create Folder Structure
+--------------------------------
+mkdir src
+
+
+STEP 3: Move Downloaded Files
+------------------------------
+Place these files in the ROOT directory:
+✓ package.json
+✓ vercel.json
+✓ vite.config.js
+✓ tailwind.config.js
+✓ postcss.config.js
+✓ .gitignore
+✓ index.html
+✓ README.md
+
+Place these files in the SRC directory (remove "src-" prefix):
+✓ src-main.jsx → src/main.jsx
+✓ src-App.jsx → src/App.jsx
+✓ src-TeamsSimulator.jsx → src/TeamsSimulator.jsx
+✓ src-index.css → src/index.css
+
+
+STEP 4: Install Dependencies
+-----------------------------
+npm install
+
+
+STEP 5: Test Locally
+---------------------
+npm run dev
+
+Open: http://localhost:5173
+
+
+STEP 6: Deploy to Vercel
+-------------------------
+
+OPTION A - Using Vercel CLI:
+  npm i -g vercel
+  vercel login
+  vercel --prod
+
+OPTION B - Using GitHub:
+  git init
+  git add .
+  git commit -m "Initial commit"
+  git remote add origin https://github.com/YOUR_USERNAME/teams-simulator.git
+  git push -u origin main
+  
+  Then go to vercel.com and import your repository
+
+
+TROUBLESHOOTING
+---------------
+404 Error on Vercel?
+→ Make sure vercel.json is in the root directory
+
+Build fails?
+→ Delete node_modules and run: npm install
+
+Styling broken?
+→ Check that src/index.css has @tailwind directives
+
+HPLC not available?
+→ Just kidding, Luna will tell you when it's free! 😄
+
+
+BOT COMMANDS TO TRY
+-------------------
+AssistBot (Purple):
+  "What's my project status?"
+  "Show me my tasks"
+  "What meetings do I have?"
+
+Luna (Blue):
+  "Search for formulas"
+  "Tell me about hyaluronic acid"
+  "Check regulatory compliance"
+  "Show stability test results"
+  "Is the HPLC available?"
+
+
+Need help? Check README.md for detailed instructions.
